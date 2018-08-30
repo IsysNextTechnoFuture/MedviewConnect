@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_background">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:id="@+id/layout_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_one"
+            android:background="@drawable/border_tray_layout"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/padding_large"
+                android:src="@drawable/profile"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"/>
+
+            <ListView
+                android:layout_width="60dp"
+                android:layout_gravity="center"
+                android:dividerHeight="0dp"
+                android:divider="@color/black_transparent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tray_list_menu">
+
+            </ListView>
+        </LinearLayout>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:id="@+id/tray_button_list"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@mipmap/side_tray"/>
+        <Button
+            android:layout_width="@dimen/activity_margin_xxxxlarge"
+            android:layout_height="@dimen/review_image_big"
+            android:id="@+id/tray_button"
+            android:layout_gravity="center"
+            android:background="@mipmap/side_tray"/>
+    </LinearLayout>
+</LinearLayout>

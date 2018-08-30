@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <ImageView
+            android:id="@+id/rotate_cam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/audio"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/rotate_cam"/>
+
+        <ImageView
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/video_call"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/mic_on" />
+
+        <ImageView
+            android:id="@+id/video_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/video"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/video_call" />
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/conference"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/video_on" />
+
+        <ImageView
+            android:id="@+id/icon_intake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/lp"
+            android:layout_weight ="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/conference" />
+
+        <ImageView
+            android:id="@+id/lp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/plan_of_care"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/lp" />
+
+        <ImageView
+            android:id="@+id/plan_of_care"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/appoint_patient"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/plan_of_care" />
+
+        <ImageView
+            android:id="@+id/appoint_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/patient_appointment" />
+
+    </LinearLayout>
+</FrameLayout>
+
+    <SlidingDrawer
+        android:id="@+id/simpleSlidingDrawer"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="horizontal"
+        android:rotation="180">
+
+        <!-- Button for the handle of SlidingDrawer -->
+        <Button
+            android:id="@id/handle"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:background="@mipmap/side_tray"
+            android:rotation="180"
+            android:textColor="#fff"/>
+        <!-- layout for the content of the SLidingDrawer -->
+        <LinearLayout
+            android:id="@id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:rotation="180">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_layout_tray"
+                android:orientation="vertical"
+                android:background="@drawable/border_tray_layout">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_large"
+                app:civ_border_color="#ff000000"
+                app:civ_border_width="0.1dp"/>
+
+            <!-- DEFINE ALL YOUR CONTENT,WIDGETS HERE WHICH YOU WANT TO ADD IN SLIDING DRAWER LAYOUT. -->
+            <ListView
+                android:id="@+id/tray_list_menu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:dividerHeight="0dp"></ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+
+
+    <!-- <LinearLayout android:orientation="horizontal"
+         android:layout_height="match_parent"
+         android:layout_width="wrap_content"
+         android:gravity="center"
+         android:layout_gravity="left">
+
+
+         <LinearLayout android:background="@drawable/border_tray_layout"
+             android:orientation="vertical"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:visibility="gone"
+             android:id="@+id/layout_one">
+
+             <de.hdodenhof.circleimageview.CircleImageView
+                 android:layout_height="80dp"
+                 android:layout_width="70dp"
+                 android:id="@+id/profile_image"
+                 app:civ_border_color="#FF000000"
+                 app:civ_border_width="1dp"
+                 android:src="@drawable/profile"
+                 android:layout_marginTop="@dimen/padding_large"
+                 xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+             <ListView android:layout_height="wrap_content"
+                 android:layout_width="60dp"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/tray_list_menu"
+                 android:divider="@null"
+                 android:dividerHeight="0dp">
+             </ListView>
+
+         </LinearLayout>
+
+         <ImageView android:background="@mipmap/side_tray"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_gravity="center"
+             android:id="@+id/iv_try"
+             android:contentDescription="@string/app_name"
+             android:scaleType="fitStart"/>
+
+     </LinearLayout>-->
+</RelativeLayout>

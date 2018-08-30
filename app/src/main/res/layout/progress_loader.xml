@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:orientation="horizontal"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_height="@dimen/btn_height"
+        android:layout_width="@dimen/btn_height"
+        app:indicator_color="@color/trasparent_black"
+        app:indicator="BallSpinFadeLoader"
+        android:visibility="visible"
+        android:id="@+id/avloadingIndicatorView"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#474747</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#787878</color>
+    <color name="lighter_gray">#939393</color>
+    <color name="login">#61c6b5</color>
+    <color name="forgot_pasword">#3882a7</color>
+    <color name="trasparent_black">#B03c4456</color>
+    <color name="screen_trasparent_black">#B3333A49</color>
+    <color name="listitem">#B0333a49</color>
+    <color name="favourite">#ffde00</color>
+    <color name="black_transparent">#1A000000</color>
+    <color name="login_bt_pressd">#b061c6b5</color>
+    <color name="sky_blue">#61c6b5</color>
+    <color name="blue">#4682B4</color>
+    <color name="green">#5b9181</color>
+    <color name="text_color_intake"> #61C6B5</color>
+    <color name="transparent">#80000000</color>
+
+    <!--90% transparency-->
+    <color name="transparent_back">#14400000</color>
+    <color name="tray_background">#809FB5E4</color>
+    <color name="lp_transparent">#66000000</color>
+    <color name="splash_background">#474747</color>
+    <color name="my_list_img">#fbaa27</color>
+    <color name="sent_msg_circle">#61bc6d</color>
+    <color name="text_color_green">#47c9bd</color>
+
+    <!--Edit Profile-->
+    <color name="transparent_black_drop_down">#8C3c4456</color>
+</resources>

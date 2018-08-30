@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trasparent_black"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/review_image_small"
+        android:background="@drawable/border_et_round_gray"
+        android:layout_marginRight="@dimen/review_image_small"
+        android:layout_marginLeft="@dimen/review_image_small"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/spin_lp_lp"
+        android:layout_toRightOf="@+id/tv_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:dropDownSelector="@mipmap/spinner_dropdown"
+        android:imeOptions="actionNext"
+        android:layout_gravity="right"
+        android:paddingBottom="@dimen/text_margin_normal"
+        android:paddingLeft="@dimen/text_margin_mini"
+        android:paddingRight="@dimen/text_margin_mini"
+        android:paddingTop="@dimen/text_margin_normal"/>
+    </FrameLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/lp_spin_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/text_margin_xxxlarge"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/text_size_large"
+        android:text="@string/close"
+        android:background="@drawable/bt_forgot_border"
+        android:textColor="@color/white"/>
+</RelativeLayout>
+</LinearLayout>

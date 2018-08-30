@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_attach_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_large"
+            android:src="@mipmap/add_attchmnt"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:id="@+id/tv_attach_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_small"
+            android:layout_marginStart="@dimen/text_margin_normal"
+            android:layout_gravity="center_vertical"
+            android:text="@string/Attach_file"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+</LinearLayout>

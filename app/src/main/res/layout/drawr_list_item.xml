@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="left"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingBottom="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_large">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drawr_list_icon"
+                android:src="@mipmap/appointments"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:elevation="2dp"
+                android:id="@+id/img_card_view"
+                android:paddingLeft="2dp"
+                app:cardCornerRadius="@dimen/text_margin_medium"
+                android:layout_gravity="right"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_unread_msg"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:text="3"/>
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

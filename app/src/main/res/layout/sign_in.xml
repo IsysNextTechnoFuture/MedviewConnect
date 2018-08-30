@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/review_image_big"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/image_height_medium"
+        android:layout_marginTop="@dimen/activity_margin_xxlarge"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/logo" />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_xxxlarge"
+        android:paddingBottom="@dimen/text_margin_xmedium"
+        android:paddingLeft="@dimen/text_margin_medium"
+        android:paddingRight="@dimen/text_margin_medium"
+        android:paddingTop="@dimen/text_margin_xmedium"
+        android:gravity="center_vertical"
+        android:hint="@string/email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
+        android:background="@drawable/border_et_round_gray"
+        />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin_xmedium"
+        android:paddingBottom="@dimen/text_margin_xmedium"
+        android:paddingLeft="@dimen/text_margin_medium"
+        android:paddingRight="@dimen/text_margin_medium"
+        android:paddingTop="@dimen/text_margin_xmedium"
+        android:gravity="center_vertical"
+        android:hint="@string/password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lighter_gray"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold"
+        android:background="@drawable/border_et_round_gray"
+        />
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/text_margin_small"
+        android:paddingBottom="@dimen/text_margin_small"
+        android:paddingLeft="@dimen/text_margin_medium"
+        android:paddingRight="@dimen/text_margin_medium"
+        android:layout_marginTop="@dimen/text_margin_xxxlarge"
+        android:layout_marginLeft="@dimen/text_margin_xxlarge"
+        android:layout_marginRight="@dimen/text_margin_xxlarge"
+        android:gravity="center"
+        android:text="@string/forgot_your_password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:background="@drawable/btn_more_rounded_blue"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin_normal"
+        android:gravity="center"
+        android:hint="@string/login"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:background="@drawable/btn_rounded"
+        />
+
+    <TextView
+        android:id="@+id/tv_create_an_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin_medium"
+        android:gravity="center"
+        android:text="@string/create_an_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        />
+
+    </LinearLayout>
+</ScrollView>

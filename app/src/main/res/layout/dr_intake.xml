@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/text_margin_large"
+            android:layout_marginRight="@dimen/text_margin_large"
+            android:layout_marginTop="@dimen/text_margin_large"
+            android:layout_marginBottom="@dimen/text_margin_large"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_intake_seemore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SeeMore"
+                android:textColor="@color/white"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="@dimen/padding_medium"
+                android:textSize="@dimen/text_margin_large"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intake"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_purpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pupose"
+                    android:textColor="@color/text_color_intake"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_marginBottom="@dimen/padding_medium"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <EditText
+                    android:id="@+id/et_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/skill_image_height_large"
+                    android:paddingBottom="@dimen/text_margin_xmedium"
+                    android:paddingLeft="@dimen/text_margin_medium"
+                    android:paddingRight="@dimen/text_margin_medium"
+                    android:paddingTop="@dimen/text_margin_xmedium"
+                    android:background="@drawable/border_et_round_gray"
+                    android:gravity="start"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="150"
+                    android:maxLines="1"
+                    android:hint="@string/puprose_hint"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/lighter_gray"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_normal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_patient_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_file"
+                android:textColor="@color/text_color_intake"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:padding="@dimen/padding_medium"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <ImageView
+                android:id="@+id/patient_files_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_normal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_lp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prferred_lp"
+                android:textColor="@color/text_color_intake"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:padding="@dimen/padding_medium"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <TextView
+                android:id="@+id/tv_lp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lp_text"
+                android:textColor="@color/white"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:padding="@dimen/padding_medium"
+                android:textSize="@dimen/text_size_medium"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_normal"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allergies"
+                    android:textColor="@color/text_color_intake"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_marginBottom="@dimen/padding_medium"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <EditText
+                    android:id="@+id/et_allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/skill_image_height_large"
+                    android:paddingBottom="@dimen/text_margin_xmedium"
+                    android:paddingLeft="@dimen/text_margin_medium"
+                    android:paddingRight="@dimen/text_margin_medium"
+                    android:paddingTop="@dimen/text_margin_xmedium"
+                    android:background="@drawable/border_et_round_gray"
+                    android:gravity="start"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="150"
+                    android:maxLines="1"
+                    android:hint="@string/allergies_detail"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/lighter_gray"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_medical_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medical_condotion"
+                android:textColor="@color/text_color_intake"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/text_margin_xlarge"
+                android:padding="@dimen/padding_medium"
+                android:textSize="@dimen/text_size_medium"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_medical_condition_cancer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medical_condotion_cancer"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="@dimen/padding_medium"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <ImageView
+                android:id="@+id/btn_cancer_switch"
+                android:layout_width="@dimen/btn_hieght"
+                android:layout_height="@dimen/progressbar_height"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/btn_switch_off"/>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_heart_diese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_dises"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_heart_diese"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_stroke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stroke"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_stroke"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_high_bp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_bp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_high_bp"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_high_cholestrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_colestrol"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_cholestrol"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_asthma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asthmam"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_asthma"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_depression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/depression"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="@dimen/padding_medium"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <ImageView
+                android:id="@+id/btn_depression"
+                android:layout_width="@dimen/btn_hieght"
+                android:layout_height="@dimen/progressbar_height"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/btn_switch_off"/>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_artritis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Arthritis"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_artritis"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_thyroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abnormal_thyroid"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_thyroid"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_pregnant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregnant"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_pregnant"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_other"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_symptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/symptoms"
+                android:textColor="@color/text_color_intake"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/text_margin_xlarge"
+                android:padding="@dimen/padding_medium"
+                android:textSize="@dimen/text_size_medium"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_fever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fever"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_fevr"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight_loss"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_weight"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_dificulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/difficulty_sleeping"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_dificulty"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_loss_appetite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loss_of_appetite"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_loss_appetite"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mood_changes"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_mood"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_medium"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_fatigue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fatigue"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <ImageView
+                    android:id="@+id/btn_fatigue"
+                    android:layout_width="@dimen/btn_hieght"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:src="@mipmap/btn_switch_off"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_xlarge"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_current_medication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_medication"
+                    android:textColor="@color/text_color_intake"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_marginBottom="@dimen/padding_medium"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <EditText
+                    android:id="@+id/et_current_medication"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/skill_image_height_large"
+                    android:paddingBottom="@dimen/text_margin_xmedium"
+                    android:paddingLeft="@dimen/text_margin_medium"
+                    android:paddingRight="@dimen/text_margin_medium"
+                    android:paddingTop="@dimen/text_margin_xmedium"
+                    android:background="@drawable/border_et_round_gray"
+                    android:gravity="start"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="150"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/lighter_gray"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_xlarge"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_prfred_pharmacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prefred_pharmacy"
+                    android:textColor="@color/text_color_intake"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/padding_medium"
+                    android:layout_marginBottom="@dimen/padding_medium"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <EditText
+                    android:id="@+id/et_prfred_pharmacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/skill_image_height_large"
+                    android:paddingBottom="@dimen/text_margin_xmedium"
+                    android:paddingLeft="@dimen/text_margin_medium"
+                    android:paddingRight="@dimen/text_margin_medium"
+                    android:paddingTop="@dimen/text_margin_xmedium"
+                    android:background="@drawable/border_et_round_gray"
+                    android:gravity="start"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="150"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/lighter_gray"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_large"
+                android:layout_marginTop="@dimen/text_margin_xlarge"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/text_margin_xxxlarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/close"
+                android:background="@drawable/bt_forgot_border"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

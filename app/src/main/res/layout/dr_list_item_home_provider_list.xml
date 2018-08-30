@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_provider_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/text_margin_xlarge">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/text_margin_large">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/civ_provider"
+        android:layout_width="@dimen/image_width_medium"
+        android:layout_height="@dimen/image_height_normalx"
+        android:src="@mipmap/user_image"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0.5dp" />
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin_mini"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_provider_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gregory House"
+                android:maxLines="1"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:textColor="@color/lighter_gray"
+                android:textSize="@dimen/text_size_normal" />
+            <TextView
+                android:id="@+id/tv_speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infectious Disease"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:ellipsize="end"
+                android:textColor="@color/lighter_gray"
+                android:textSize="@dimen/text_size_normal" />
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offline"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:ellipsize="end"
+                android:textColor="@color/lighter_gray"
+                android:textSize="@dimen/text_size_normal" />
+            <RatingBar
+                android:id="@+id/rb_provider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_mini"
+                android:numStars="5"
+                android:max="5"
+                android:stepSize="1.0"
+                android:theme="@style/RatingBar"
+                android:isIndicator="true"
+                style="@style/themeRatingBarSmall_review"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin_large"
+            android:layout_marginEnd="@dimen/text_margin_xlarge"
+            android:src="@mipmap/unchecked_heart"
+            android:contentDescription="@string/app_name"/>
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_margin_xlarge"
+            android:layout_marginStart="@dimen/text_margin_mini"
+            android:src="@mipmap/status"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider_small"
+        android:layout_marginTop="@dimen/text_margin_xxlarge"
+        android:layout_marginStart="@dimen/text_margin_xxxlarge"
+        android:background="@color/gray"/>
+</LinearLayout>

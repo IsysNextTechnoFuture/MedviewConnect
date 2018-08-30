@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:id="@+id/linear_layout_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="@dimen/activity_margin_xxlarge"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:padding="@dimen/padding_small"
+                android:id="@+id/no_list_img"
+                android:src="@mipmap/no_patient_appoint"/>
+
+
+            <TextView
+                android:id="@+id/tv_no_list"
+                android:layout_width="0dp"
+                android:layout_weight="2.1"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/text_margin_medium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/no_patient_connect"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/back_appointment"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="@dimen/activity_margin_xxlarge"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:padding="@dimen/padding_small"
+                android:text="@string/close"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/appoint_list"
+            android:layout_below="@+id/linear_layout_top"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="vertical"
+            android:padding="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:divider="@color/white">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/text_margin_medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider_hieght"
+        android:background="@color/white"/>
+
+</LinearLayout>

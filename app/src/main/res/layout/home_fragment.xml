@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:id="@+id/container">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="8"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/rotate_cam"
+            android:layout_toLeftOf="@+id/audio"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/rotate_cam"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/audio"
+            android:layout_toLeftOf="@+id/video_call"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/mic_on"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_call"
+            android:layout_toLeftOf="@+id/video"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/video_call"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/video"
+            android:layout_toLeftOf="@+id/conference"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/video_on"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/conference"
+            android:layout_toLeftOf="@+id/lp"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/conference"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/lp"
+            android:padding="@dimen/padding_medium"
+            android:layout_toLeftOf="@id/plan_of_care"
+            android:src="@mipmap/lp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/plan_of_care"
+            android:padding="@dimen/padding_medium"
+            android:layout_toLeftOf="@+id/appoint_patient"
+            android:src="@mipmap/plan_of_care"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/appoint_patient"
+            android:padding="@dimen/padding_medium"
+            android:src="@mipmap/patient_appointment"/>
+
+    </LinearLayout>
+</LinearLayout>

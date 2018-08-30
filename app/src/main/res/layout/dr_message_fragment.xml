@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_medium"
+        android:layout_marginRight="@dimen/activity_margin_medium"
+        android:layout_marginTop="@dimen/activity_margin_xlarge"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/width_img"
+            android:layout_height="@dimen/text_margin_xlarge"
+            android:id="@+id/img_back"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_medium"
+            android:visibility="gone"
+            android:src="@drawable/back_arrow_left"/>
+
+        <TextView
+            android:id="@+id/tv_my_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_message"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_wid_icon_text_size" />
+
+        <TextView
+            android:id="@+id/tv_sent_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_normal"
+            android:layout_marginRight="@dimen/text_margin_normal"
+            android:text="@string/sent_message"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_wid_icon_text_size" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:textSize="@dimen/btn_wid_icon_text_size"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_medium"
+        android:layout_marginTop="@dimen/text_margin_small"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/content_frame_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

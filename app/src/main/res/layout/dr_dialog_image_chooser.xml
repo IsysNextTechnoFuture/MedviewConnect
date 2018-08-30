@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/text_margin_large"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:minWidth="240dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/text_margin_large"
+    android:paddingTop="@dimen/text_margin_large">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin_medium"
+        android:layout_marginRight="@dimen/text_margin_medium"
+        android:gravity="start|center_vertical"
+        android:text="@string/choose_photo"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/text_margin_large"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_normal"
+        android:layout_marginRight="@dimen/activity_margin_normal"
+        android:layout_marginTop="@dimen/text_margin_large"
+        android:drawablePadding="@dimen/edt_padding_normal"
+        android:drawableStart="@drawable/ic_gallery"
+        android:gravity="center_vertical|start"
+        android:text="@string/gallery"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/text_margin_large"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_normal"
+        android:layout_marginRight="@dimen/activity_margin_normal"
+        android:layout_marginTop="@dimen/text_margin_large"
+        android:drawablePadding="@dimen/activity_margin_normal"
+        android:drawableStart="@drawable/ic_camera_gray"
+        android:gravity="center_vertical|start"
+        android:text="@string/camera"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/text_margin_large"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_remove_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_normal"
+        android:layout_marginRight="@dimen/activity_margin_normal"
+        android:layout_marginTop="@dimen/text_margin_large"
+        android:drawablePadding="@dimen/activity_margin_normal"
+        android:drawableStart="@drawable/ic_delete"
+        android:gravity="center_vertical|start"
+        android:text="@string/remove_photo"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_medium" />
+
+</LinearLayout>

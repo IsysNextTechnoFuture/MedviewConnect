@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_medium"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_large"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/profile_no_img"
+            android:layout_marginRight="@dimen/padding_small"
+            app:civ_border_color="#ff000000"
+            app:civ_border_width="0.1dp"/>
+
+
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_large"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:paddingLeft="@dimen/padding_medium"
+            android:text="Meera Trivedi"
+            />
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_toRightOf="@+id/tvSenderName"
+            android:layout_marginTop="@dimen/padding_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_medium"
+            android:text="21/05/2018 12:40"/>
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_below="@+id/tvSenderName"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_large"
+            android:paddingLeft="@dimen/padding_medium"
+            android:text="Hey How r u"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

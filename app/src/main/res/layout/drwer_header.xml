@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_medium"
+    android:paddingLeft="@dimen/padding_medium"
+    android:paddingRight="@dimen/padding_medium"
+    android:paddingTop="@dimen/padding_medium"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:src="@drawable/profile"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FF000000"/>
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_large"
+        android:src="@drawable/profile_no_img"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:layout_marginBottom="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_medium"
+        android:text="@string/name"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge" />-->
+
+</LinearLayout>

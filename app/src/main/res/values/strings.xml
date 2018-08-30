@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">MedviewConnect</string>
+    <string name="medview">Medview</string>
+    <string name="connect">Connect</string>
+    <string name="forgotpass_text">Reset Your Password</string>
+    <string name="forgotpass_text_two">Enter your email address to get a link to reset your password</string>
+    <string name="hint_email_forgot">Email</string>
+    <string name="please_enter_subject_name">Please enter subject name</string>
+    <string name="please_enter_valid_subject_name">Please enter valid subject name</string>
+    <string name="please_enter_description">Please enter description</string>
+
+    <!--home-->
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="name">Username</string>
+    <string name="SeeMore">See more</string>
+    <string name="patient">Patient</string>
+    <string name="call">Call</string>
+    <string name="subjective">Subjective</string>
+    <string name="plan">Plan</string>
+    <string name="pupose">Purpose of visit</string>
+    <string name="puprose_hint">Enter details here....</string>
+
+    <!--plan of care-->
+    <string name="assemnet">Assessment</string>
+    <string name="objective">Objective</string>
+    <string name="eprescription">ePrescription</string>
+    <string name="planofcare">Plan of Care</string>
+
+    <!--intake-->
+    <string name="intake">Intake</string>
+    <string name="patient_file">Patient files</string>
+    <string name="prferred_lp">Preferred LP</string>
+    <string name="Lp_text">LpText</string>
+    <string name="allergies">Allergies</string>
+    <string name="allergies_detail">Detail</string>
+    <string name="medical_condotion">Medical conditions</string>
+    <string name="medical_condotion_cancer">Cancer</string>
+    <string name="heart_dises">Heart disease(CHF,MI)</string>
+    <string name="stroke">Stroke</string>
+    <string name="high_bp">High blood pressure</string>
+    <string name="high_colestrol">High Cholestrol</string>
+    <string name="asthmam">Ashthma/COPD</string>
+    <string name="depression">Depression</string>
+    <string name="Arthritis">Artritis</string>
+    <string name="abnormal_thyroid">Abnormal thyroid</string>
+    <string name="pregnant">Pregnant</string>
+    <string name="other">Other</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="fever">Fever</string>
+    <string name="weight_loss">Weight loss/gain</string>
+    <string name="difficulty_sleeping">Difficulty sleeping</string>
+    <string name="loss_of_appetite">Loss of appetite</string>
+    <string name="mood_changes">Mood changes</string>
+    <string name="fatigue">Fatigue/weakness</string>
+    <string name="current_medication">Current medications</string>
+    <string name="prefred_pharmacy">Preferred pharmacy</string>
+
+    <!-- Sign In-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="email_empty">Please enter your email.</string>
+    <string name="please_enter_valid_email">Please enter valid email.</string>
+    <string name="please_enter_password">Please enter your password.</string>
+    <string name="please_enter_valid_password">Password length should be minimum 8 character.</string>
+
+
+    <!--Dialogue-->
+    <string name="Whoops">Whoops!</string>
+    <string name="no_provider_available">No any viist</string>
+    <string name="check_connection">Unable to make a connection with remote server. Either please check your internet connection or try after some time.</string>
+    <string name="aproval">Your registration was successful.To approve your account, please contact to administrator.</string>
+    <string name="ok">OK</string>
+    <string name="confirmation_title">Confirmation </string>
+    <string name="validation_title">Whoops!</string>
+    <string name="server_error">Can not connect to server! Please try again.</string>
+    <string name="no_patient_connect">No patient connected</string>
+    <string name="network_error">No internet connection, please connect your phone to wifi or data connection.</string>
+
+
+    <!--Edit Profile-->
+    <string name="save">Save</string>
+    <string name="last_name">Last Name</string>
+   <string name="mobile_number">Mobile No</string>
+    <string name="change">Change</string>
+    <string name="current_password_minimum_eight_character">Current password (Minimum 8 character)</string>
+    <string name="new_password_minimum_eight_character">New password (Minimum 8 character)</string>
+    <string name="re_type_new_password">Re-type new password</string>
+    <string name="security_question">Security question</string>
+    <string name="current_security_question">Current security question</string>
+    <string name="current_security_answer">Current security answer</string>
+    <string name="new_security_question">New security question</string>
+    <string name="new_security_answer">New security answer</string>
+    <string name="first_name">First Name</string>
+    <string name="profile">Profile</string>
+    <string name="please_select_current_squirity_question">Please select current security question.</string>
+    <string name="please_enter_current_squirity_answer">Please enter current security answer.</string>
+    <string name="please_select_new_squirity_question">Please select current security question.</string>
+    <string name="please_enter_new_squirity_answer">Please enter new security answer.</string>
+    <string name="please_enter_current_password">Please enter your current password.</string>
+    <string name="please_enter_new_password">Please enter your new password.</string>
+    <string name="please_enter_valid_current_password">Please enter valid current password.</string>
+    <string name="please_enter_valid_new_password">New password length should be minimum 8 character.</string>
+    <string name="province_of_residence">Province of residence</string>
+    <string name="please_re_type_password">Please re type password</string>
+    <string name="please_select_province_of_residence">Please select province of residence.</string>
+    <string name="please_select_residence_type">Please select residence type.</string>
+    <string name="please_select_squirity_question">Please select security question.</string>
+    <string name="please_enter_first_name">Please enter first name.</string>
+    <string name="please_enter_valid_firt_name">Please enter valid first name.</string>
+    <string name="please_enter_valid_last_name">Please enter valid last name.</string>
+    <string name="please_enter_last_name">Please enter last name.</string>
+    <string name="please_enter_mobile_number">Please enter mobile number</string>
+    <string name="please_enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="new_password_and_retype_password_does_not_match">New password and retype password does not match.</string>
+
+
+    <!--Message-->
+    <string name="my_message">My messages</string>
+    <string name="sent_message">Sent messages</string>
+    <string name="back_to_inbox">Back to inbox</string>
+    <string name="re">Re:</string>
+    <string name="from">From:</string>
+    <string name="sent">Sent:</string>
+    <string name="to">To:</string>
+    <string name="subject">Subject:</string>
+    <string name="submit">Submit</string>
+    <string name="provider_to_provider_message">Provider to provider message</string>
+    <string name="Attach_file">Attach file</string>
+    <string name="list_empty">List Empty</string>list_empty
+
+
+    <!--Dialogue Image Chooser-->
+    <string name="camera">Camera</string>
+    <string name="take_photo">Take photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="crop_action_support">Sorry! your device doesn\'t support cropping action.</string>
+    <string name="crop_action_error">Sorry! image is not cropped.</string>
+    <string name="camera_capture_error">Sorry! image is not captured. Please try again.</string>
+    <string name="gallery_pick_error">Sorry! image is not picked from gallery. Please try again.</string>
+
+    <!--Patient Home-->
+    <string name="favorite_provider">Favorite Provider</string>
+    <string name="provider">Provider</string>
+    <string name="providers">Providers</string>
+    <string name="providers_sre_not_navailable">Providers are not available</string>
+    <string name="favourite_providers_sre_not_navailable">Favourite providers are not available</string>
+    <string name="are_you_sure_that_you_want_to_add_to_favorite">Are you sure you want to add to favorite</string>
+    <string name="are_you_sure_that_you_want_to_remove_to_favorite">Are you sure you want to remove to favorite</string>
+    <string name="add_to_favorite_successfully">Add to favorite successfully</string>
+
+    <!--Provider Detail-->
+    <string name="back_to_providers">Back to providers</string>
+    <string name="cost_per_visit_with_colon">Cost Per Visit:</string>
+    <string name="languages_with_colon">Languages:</string>
+    <string name="years_of_experience_with_colon">Years of Experience:</string>
+    <string name="board_certification_with_colon">Board Certification:</string>
+    <string name="education_with_colon">Education:</string>
+    <string name="professional_organizations_with_colon">Professional Organizations:</string>
+    <string name="states_of_practice_with_colon">States of Practice:</string>
+    <string name="latest_rating">Latest Rating</string>
+    <string name="send_message">Send Message</string>
+    <string name="start_welcome_video">Start Welcome Video</string>
+    <string name="start_visit">Start Visit</string>
+    <string name="start_chat">Start Chat</string>
+
+
+</resources>

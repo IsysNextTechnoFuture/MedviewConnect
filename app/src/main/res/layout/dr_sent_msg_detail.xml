@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_marginBottom="@dimen/padding_medium"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/frame_tv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="@dimen/progressbar_width"
+                android:layout_height="@dimen/progressbar_width"
+                android:elevation="@dimen/text_margin_normal"
+                android:id="@+id/img_card_view"
+                app:cardCornerRadius="@dimen/text_margin_xxxlarge"
+                android:layout_centerHorizontal="true"
+                android:shape="ring"
+                android:thicknessRatio="1.2">
+                <ImageView
+                    android:layout_height="@dimen/review_image_big"
+                    android:layout_width="@dimen/review_image_big"
+                    android:id="@+id/text_img"
+                    android:background="@color/sent_msg_circle"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:padding="@dimen/padding_small"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/frame_tv_img"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_msg_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:paddingLeft="@dimen/padding_medium"
+                android:text="Chhaya singh"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_wid_icon_text_size" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="@dimen/text_margin_xxxlarge"
+                android:id="@+id/reply"
+                android:layout_gravity="right"
+                android:src="@mipmap/reply"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_name"
+            android:layout_toRightOf="@+id/frame_tv_img"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"
+                android:text="14/04/2018"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"
+                android:text="08:30:41"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/frame_tv_img"
+            android:layout_below="@+id/layout_date_time"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_subject_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:text="@string/re"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:text=""
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_msg_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="@dimen/padding_medium"
+            android:textSize="@dimen/btn_wid_icon_text_size"
+            android:layout_marginTop="@dimen/text_margin_xxlarge"
+            android:text="Detail content msg"/>
+        <LinearLayout
+            android:id="@+id/layout_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <View
+            android:id="@+id/myview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_small"
+            android:paddingRight="@dimen/padding_medium"
+            android:paddingLeft="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_large"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_large"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_large"
+            android:layout_toRightOf="@+id/frame_tv_img"
+            android:layout_below="@+id/layout_date_time"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:text="@string/from"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_from_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"
+                android:text="Harsh dashore"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/frame_tv_img"
+            android:layout_below="@+id/layout_date_time"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:text="@string/sent"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_date_sendr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"
+                android:text="20/02/2018"/>
+
+            <TextView
+                android:id="@+id/tv_time_sendr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"
+                android:text="11:05"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/frame_tv_img"
+            android:layout_below="@+id/layout_date_time"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_to_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:text="@string/to"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"
+                android:text="Meera Trivedi"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/frame_tv_img"
+            android:layout_below="@+id/layout_date_time"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sbjct_send_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:text="@string/subject"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_subject_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding_medium"
+                android:textSize="@dimen/btn_wid_icon_text_size"
+                android:textColor="@color/white"
+                android:text="child"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_msg_detail_sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_wid_icon_text_size"
+            android:layout_marginTop="@dimen/text_margin_xxlarge"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:text="Detail content msg from sender"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

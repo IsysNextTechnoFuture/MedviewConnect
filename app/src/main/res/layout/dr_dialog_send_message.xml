@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trasparent_black"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/review_image_big"
+        android:paddingStart="@dimen/review_image_big"
+        android:paddingTop="@dimen/btn_hieght"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_small"
+            android:gravity="center_horizontal"
+            android:text="@string/send_message"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_subject_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_xxxlarge"
+            android:background="@drawable/border_et_round_gray"
+            android:gravity="center_vertical"
+            android:hint="@string/subject"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/text_margin_xmedium"
+            android:paddingLeft="@dimen/text_margin_medium"
+            android:paddingRight="@dimen/text_margin_medium"
+            android:paddingTop="@dimen/text_margin_xmedium"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lighter_gray"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/et_subject_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_xmedium"
+            android:background="@drawable/border_et_round_gray"
+            android:gravity="start"
+            android:hint=""
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine|textCapWords"
+            android:lines="11"
+            android:paddingBottom="@dimen/text_margin_small"
+            android:paddingLeft="@dimen/text_margin_medium"
+            android:paddingRight="@dimen/text_margin_medium"
+            android:paddingTop="@dimen/text_margin_small"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lighter_gray"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ListView
+            android:id="@+id/lv_attachment_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin_large"
+            android:layout_marginTop="@dimen/text_margin_large"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_margin_normal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded"
+                android:gravity="center"
+                android:hint="@string/submit"
+                android:paddingBottom="@dimen/text_margin_medium"
+                android:paddingTop="@dimen/text_margin_medium"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded"
+                android:gravity="center"
+                android:hint="@string/close"
+                android:paddingBottom="@dimen/text_margin_medium"
+                android:paddingTop="@dimen/text_margin_medium"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
